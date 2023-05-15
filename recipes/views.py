@@ -23,7 +23,7 @@ def home(request):
 
 class RecipeListView(LoginRequiredMixin, ListView):  # class-based view
     model = Recipe  # specify model
-    template_name = 'recipes/main.html'  # specify template
+    template_name = 'recipes/list.html'  # specify template
 
 # Detailview is a class-based view used to display data details
 
