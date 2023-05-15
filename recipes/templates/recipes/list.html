@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,24 +53,29 @@
             <table border="10" cellpadding="5" cellspacing="5" width="900" height="250" justify-content="right">
                 {%comment%} start of table {%
                 endcomment%}
-                <tr> {% comment%} the
-                <tr> tag adds a new row {% endcomment%}
+                <tr> {% comment %} the
+                <tr> tag adds a new row {% endcomment %}
                     <td style="font-family: sans-serif;" align=" center">Recipes Titles</td> {% comment%} the <td> tag
                         adds a column {% endcomment %}
                     <td style="font-family: sans-serif;" align=" center">Recipes Images</td>
                 </tr>
-                {% for object in object_list %} {% comment%} now go through the list element-by-element {% endcomment %}
+                {% for object in object_list %} {% comment %} now go through the list element-by-element {% endcomment
+                %}
                 <tr>
-                    <td align="center"><a class="recipe_name" href="{{object.get_absolute_url}}"
+                    <td align="center">
+                        <a class="recipe_name" href="{{object.get_absolute_url}}"
                             style="font-family: sans-serif; color: black; text-decoration: none; ">
-                            {% comment%} add links to recipe names
-                            {% endcomment%}
+                            {% comment %} add links to recipe names
+                            {% endcomment %}
                             {{object.name}}
-                        </a></td> {% comment%} print the name of recipe {% endcomment%}
+                        </a>
+                    </td> {% comment %} print the name of recipe {% endcomment %}
                     <td>
-                        <center><img src="{{object.pic.url}}" width="250" height="250" /></center>
-                    </td> {% comment%} display the picture of recipe
-                    {% endcomment%}
+                        <center>
+                            <img src="{{object.pic.url}}" width="250" height="250" />
+                        </center>
+                    </td> {% comment %} display the picture of recipe
+                    {% endcomment %}
                 </tr>
                 {% endfor %}
             </table>

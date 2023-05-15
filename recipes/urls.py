@@ -1,11 +1,13 @@
 from django.urls import path
 from .views import home, RecipeListView, RecipeDetailView, records
-
+from django.views.generic import RedirectView
 
 app_name = 'recipes'
 
 
 urlpatterns = [
+    # This takes you to home page
+    path("", RedirectView.as_view(url="home/")),
     # THis takes you to home page
     path('home/', home, name='home'),
     # These next two shows you the list of recipes and the details note need to use .as_view()
