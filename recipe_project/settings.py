@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get(
 # ALLOWED_HOSTS = ['https://git.heroku.com/sheltered-atoll-49619.git']
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://recipe-app-je.herokuapp.com/']
 
 # Application definition
 
