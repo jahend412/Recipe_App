@@ -14,7 +14,7 @@
 
 # Home Page
 
-![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/joshendemann/Documents/careerFoundry/Recipe%20App%20Readme/Home.png?version%3D1684195277703)
+(https://file%2B.vscode-resource.vscode-cdn.net/Users/joshendemann/Documents/careerFoundry/Recipe%20App%20Readme/Home.png?version%3D1684195277703)
 
 
 # Login Form
